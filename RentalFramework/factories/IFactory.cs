@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.factories
 {
-    interface IFactory<in T, out R>
+    public interface IFactory<in T, out R>
     {
         R create(T item);
     }

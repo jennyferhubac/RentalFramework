@@ -9,7 +9,7 @@ using RentalFramework.dal;
 
 namespace RentalFramework.dal
 {
-    interface ITransactionDAO : IDAO<ITransaction, ITransaction>
+    public interface ITransactionDAO : IDAO<ITransaction, ITransaction>
     {
         bool add(ITransaction t);
 

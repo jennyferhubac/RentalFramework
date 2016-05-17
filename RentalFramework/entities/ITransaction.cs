@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.entities
 {
-    interface ITransaction
+    public interface ITransaction
     {
 
     }

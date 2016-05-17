@@ -8,7 +8,7 @@ using RentalFramework.services;
 
 namespace RentalFramework.commands
 {
-    abstract class AbstractTransactionCommand : ICommand
+    public abstract class AbstractTransactionCommand : ICommand
     {
         protected ITransactionService transactionService;
 

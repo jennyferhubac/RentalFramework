@@ -9,13 +9,18 @@ using RentalFramework.services;
 
 namespace RentalFramework.commands
 {
-    class CreateTransactionCommand : AbstractTransactionCommand
+    public class CreateTransactionCommand : AbstractTransactionCommand
     {
         private ITransactionDTO transactionDto;
 
         public CreateTransactionCommand(ITransactionService transactionService, ITransactionDTO transactionDto) : base(transactionService)
         {
             this.transactionDto = transactionDto;
+        }
+
+        public override void exeute()
+        {
+            throw new NotImplementedException();
         }
     }
 }

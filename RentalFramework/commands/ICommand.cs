@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.commands
 {
-    interface ICommand
+    public interface ICommand
     {
         void exeute();
     }

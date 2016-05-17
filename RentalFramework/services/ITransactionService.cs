@@ -9,7 +9,7 @@ using RentalFramework.entities;
 
 namespace RentalFramework.services
 {
-    interface ITransactionService
+    public interface ITransactionService
     {
         bool saveParty(ITransactionDTO dto); 
 
