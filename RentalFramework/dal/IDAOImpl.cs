@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.dal
 {
-    interface IDAOImpl
+    interface IDAOImpl<in T, out R> : IDAO<T,R>
     {
+        bool add(T t);
+
+        void delete(String id);
+
+        R find(String name);
+
+        R update(T t);
+
+        IEnumerable<R> getAll();
     }
 }
