@@ -13,3 +13,4 @@ namespace RentalFramework.dal
         bool removeItem(IItem item);
     }
 }
+

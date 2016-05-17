@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.entities
 {
-    public interface ITransaction
+    interface IRequest
     {
-        double getTotal();
-        double getPenalty();
     }
 }

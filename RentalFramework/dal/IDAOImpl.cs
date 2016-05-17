@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentalFramework.entities
+namespace RentalFramework.dal
 {
-    public interface ITransaction
+    interface IDAOImpl
     {
-        double getTotal();
-        double getPenalty();
     }
 }

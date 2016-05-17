@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentalFramework.dto
+namespace RentalFramework.entities
 {
-    public interface ITransactionDTO
+    public abstract class ARequest : IRequest
     {
+        private String requestID;
+
+        
     }
 }
