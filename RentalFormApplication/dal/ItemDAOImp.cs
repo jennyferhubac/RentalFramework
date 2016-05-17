@@ -63,5 +63,16 @@ namespace RentalFormApplication.dal
         {
             throw new NotImplementedException();
         }
+
+
+        public void delete(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IItem update(IItem t)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
