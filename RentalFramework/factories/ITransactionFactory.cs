@@ -8,8 +8,8 @@ using RentalFramework.entities;
 
 namespace RentalFramework.factories
 {
-    public interface ITransactionFactory : IFactory<ITransactionDTO, ATransaction>
+    public interface ITransactionFactory : IFactory<ATransactionDTO, ATransaction>
     {
-        ATransaction create(ITransactionDTO dto);
+        ATransaction create(ATransactionDTO dto);
     }
 }

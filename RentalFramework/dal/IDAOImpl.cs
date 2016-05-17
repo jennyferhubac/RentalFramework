@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentalFramework.dto
+namespace RentalFramework.dal
 {
-    public interface ITransactionDTO
+    interface IDAOImpl
     {
     }
 }

@@ -42,15 +42,15 @@
     <Compile Include="builder\IBuilder.cs" />
     <Compile Include="commands\AbstractItemCommand.cs" />
     <Compile Include="commands\AbstractTransactionCommand.cs" />
-    <Compile Include="commands\CreateTransactionCommand.cs" />
     <Compile Include="commands\ICommand.cs" />
     <Compile Include="commands\IInvoker.cs" />
     <Compile Include="dal\IDAO.cs" />
+    <Compile Include="dal\IDAOImpl.cs" />
     <Compile Include="dal\IItemDAO.cs" />
     <Compile Include="dal\ITransactionDAO.cs" />
+    <Compile Include="dto\ATransactionDTO.cs" />
     <Compile Include="dto\IDTO.cs" />
     <Compile Include="dto\ItemDTO.cs" />
-    <Compile Include="dto\ITransactionDTO.cs" />
     <Compile Include="entities\AItem.cs" />
     <Compile Include="entities\ARequest.cs" />
     <Compile Include="entities\ATransaction.cs" />

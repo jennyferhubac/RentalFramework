@@ -11,7 +11,8 @@ namespace RentalFramework.entities
         protected String transactionID;
         protected DateTime transactionDate;
 
-        protected Double amount;
+        protected Double totalAmount;
+        protected Double penaltyAmount;
 
         private ARequest request;
 

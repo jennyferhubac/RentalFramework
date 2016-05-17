@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 using RentalFramework.dto;
 using RentalFramework.services;
+using RentalFramework.commands;
 
-namespace RentalFramework.commands
+namespace RentalFormApplication.commands
 {
     public class CreateTransactionCommand : AbstractTransactionCommand
     {
-        private ITransactionDTO transactionDto;
+        private ATransactionDTO transactionDto;
 
-        public CreateTransactionCommand(ITransactionService transactionService, ITransactionDTO transactionDto) : base(transactionService)
+        public CreateTransactionCommand(ITransactionService transactionService, ATransactionDTO transactionDto) : base(transactionService)
         {
             this.transactionDto = transactionDto;
         }
