@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentalFramework.dto
+namespace RentalFramework.entities
 {
-
-    interface IDTO
+    interface IRequest
     {
-
-
     }
-
 }

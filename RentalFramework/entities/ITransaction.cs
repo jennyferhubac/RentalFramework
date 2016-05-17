@@ -8,6 +8,9 @@ namespace RentalFramework.entities
 {
     public interface ITransaction
     {
-
+        ARequest getRequest();
+        void setRequest(ARequest request);
+        double getTotal();
+        double getPenalty();
     }
 }

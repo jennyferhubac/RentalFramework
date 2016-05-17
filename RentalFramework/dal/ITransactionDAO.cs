@@ -9,12 +9,12 @@ using RentalFramework.dal;
 
 namespace RentalFramework.dal
 {
-    public interface ITransactionDAO : IDAO<ITransaction, ITransaction>
+    public interface ITransactionDAO : IDAO<ITransaction, ATransaction>
     {
         bool add(ITransaction t);
 
-        ITransaction find(String name);
+        ATransaction find(String name);
 
-        List<ITransaction> getAll();
+        List<ATransaction> getAll();
     }
 }

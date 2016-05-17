@@ -52,7 +52,9 @@
     <Compile Include="dto\ItemDTO.cs" />
     <Compile Include="dto\ITransactionDTO.cs" />
     <Compile Include="entities\AItem.cs" />
+    <Compile Include="entities\ARequest.cs" />
     <Compile Include="entities\ATransaction.cs" />
+    <Compile Include="entities\IRequest.cs" />
     <Compile Include="entities\ITransaction.cs" />
     <Compile Include="factories\IFactory.cs" />
     <Compile Include="factories\IItemFactory.cs" />

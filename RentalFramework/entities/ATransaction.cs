@@ -8,10 +8,45 @@ namespace RentalFramework.entities
 {
     public abstract class ATransaction : ITransaction
     {
-        private String transactionID;
-        private DateTime transactionDate;
+        protected String transactionID;
+        protected DateTime transactionDate;
 
+        protected Double amount;
 
+        private ARequest request;
 
+        public ATransaction()
+        {
+
+        }
+
+        public ATransaction(DateTime transactionDate, ARequest request)
+        {
+            this.transactionDate = transactionDate;
+            this.request = request;
+        }
+
+        public ARequest getRequest()
+        {
+            return request;
+        }
+
+        public void setRequest(ARequest request)
+        {
+            this.request = request;
+        }
+
+        public String getTransactionID()
+        {
+            return transactionID;
+        }
+
+        public void setTransactionID(String transactionID)
+        {
+            this.transactionID = transactionID;
+        }
+
+        public abstract double getTotal();
+        public abstract double getPenalty();
     }
 }

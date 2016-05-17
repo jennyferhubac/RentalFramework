@@ -11,9 +11,9 @@ namespace RentalFramework.services
 {
     public interface ITransactionService
     {
-        bool saveParty(ITransactionDTO dto); 
+        bool saveParty(ITransactionDTO dto);
 
-        ITransaction findParty(String email);
+        ATransaction findParty(String email);
 
         IEnumerable<ITransactionDTO> getAllParties();
     }
