@@ -1,0 +1,5 @@
+c:\users\jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFramework\bin\Debug\RentalFramework.dll
+c:\users\jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFramework\bin\Debug\RentalFramework.pdb
+c:\users\jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFramework\obj\Debug\RentalFramework.csprojResolveAssemblyReference.cache
+c:\users\jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFramework\obj\Debug\RentalFramework.dll
+c:\users\jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFramework\obj\Debug\RentalFramework.pdb
