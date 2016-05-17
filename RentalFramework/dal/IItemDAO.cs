@@ -7,9 +7,9 @@ using RentalFramework.entities;
 
 namespace RentalFramework.dal
 {
-    public interface IItemDAO : IDAO<AItem, AItem>
+    public interface IItemDAO : IDAO<IItem, IItem>
     {
-        bool addItem(AItem item);
-        bool removeItem(AItem item);
+        bool addItem(IItem item);
+        bool removeItem(IItem item);
     }
 }

@@ -102,27 +102,44 @@ namespace RentalFormApplication
         {
             Random random = new Random();
             int randomNumber = random.Next(100, 1000);
-            ItemServiceImp.getInstance().addItem(new Car(randomNumber.ToString(), "Chevy", "Cavalier", "Economy", 1000));
+            CarDTO carDTO = new CarDTO();
+            carDTO.setItemID(randomNumber.ToString());
+            carDTO.setItemType("Car");
+            carDTO.setMake("Chevy");
+            carDTO.setModel("Cavalier");
+            carDTO.setCategory("Economy");
+            carDTO.setPrice(1000);
+            ItemServiceImp.getInstance().addItem(carDTO);
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
             Random random = new Random();
             int randomNumber = random.Next(100, 1000);
-            ItemServiceImp.getInstance().addItem(new Book(randomNumber.ToString(),"Harry Poter","Sci-Fiction book", "Sci-Fi",10));
-
+            BookDTO bookDTO = new BookDTO();
+            bookDTO.setItemID(randomNumber.ToString());
+            bookDTO.setItemType("Book");
+            bookDTO.setTitle("Devil wears prada");
+            bookDTO.setDescription("Fashionably beautiful movie");
+            bookDTO.setCategory("Romance");
+            bookDTO.setNumBorrowDays(2);
+            ItemServiceImp.getInstance().addItem(bookDTO);
         }
 
         private void btnRemoveBook_Click(object sender, EventArgs e)
         {
-            AItem book = ItemServiceImp.getInstance().findItem(BookItemID.Text);
-            ItemServiceImp.getInstance().removeItem(book);
+            BookDTO bookDTO = new BookDTO();
+            bookDTO.setItemID(BookItemID.Text);
+            bookDTO.setItemType("Book");
+            ItemServiceImp.getInstance().removeItem(bookDTO);
         }
 
         private void btnRemoveCar_Click(object sender, EventArgs e)
         {
-            AItem car = ItemServiceImp.getInstance().findItem(CarItemID.Text);
-            ItemServiceImp.getInstance().removeItem(car);
+            CarDTO carDTO = new CarDTO();
+            carDTO.setItemID(CarItemID.Text);
+            carDTO.setItemType("Car");
+            ItemServiceImp.getInstance().removeItem(carDTO);
            
            
         }

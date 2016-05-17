@@ -12,16 +12,28 @@ namespace RentalFormApplication.factories
 {
     public class ItemFactory : IItemFactory
     {
-        public AItem create(ItemDTO dto)
+        private static IItemFactory factory = null;
+
+        public static IItemFactory getFactory()
         {
-            AItem item = null;
+            if (factory == null)
+			    factory = new ItemFactory();
+		    return factory;
+        
+        }
+
+        public IItem create(ItemDTO dto)
+        {
+            IItem item = null;
             switch (dto.getItemType())
             {
                 case "Book":
-                    item = new Book(dto.getItemID(),String.Empty,String.Empty,String.Empty,0);
+                    item = new Book();
+                    item.setItemID(dto.getItemID());
                     break;
                 case "Car":
-                    item = new Car(dto.getItemID(), String.Empty, String.Empty, String.Empty,0);
+                    item = new Car();
+                    item.setItemID(dto.getItemID());
                     break;
             }
             return item;

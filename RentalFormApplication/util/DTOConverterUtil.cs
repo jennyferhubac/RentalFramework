@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using RentalFramework.dto;
 using RentalFormApplication.dto;
 using RentalFormApplication.entities;
+using RentalFormApplication.decorator;
 
 namespace RentalFormApplication.util
 {
     class DTOConverterUtil
     {
 
-        public static CarDTO getPojoFromAItemToCar(Car item)
+      public static CarDTO getPojoFromAItemToCar(CarDecorator item)
         {
 		CarDTO pp = new CarDTO();
         pp.setItemID(item.getItemID());
@@ -24,8 +25,8 @@ namespace RentalFormApplication.util
 		return pp;
 	   }
 
-
-        public static BookDTO getPojoFromAItemToBook(Book item)
+        
+        public static BookDTO getPojoFromAItemToBook(BookDecorator item)
         {
             BookDTO pp = new BookDTO();
             pp.setItemID(item.getItemID());
@@ -36,6 +37,7 @@ namespace RentalFormApplication.util
             pp.setNumBorrowDays(item.getNumBorrowDays());
             return pp;
         }
+       
 
 
 

@@ -64,6 +64,8 @@
   <ItemGroup>
     <Compile Include="dal\ItemDAOImp.cs" />
     <Compile Include="database\DBTables.cs" />
+    <Compile Include="decorator\CarDecorator.cs" />
+    <Compile Include="decorator\BookDecorator.cs" />
     <Compile Include="dto\BookDTO.cs" />
     <Compile Include="dto\CarDTO.cs" />
     <Compile Include="entities\Book.cs" />
@@ -142,6 +144,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

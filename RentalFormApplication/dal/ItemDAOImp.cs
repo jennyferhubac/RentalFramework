@@ -18,7 +18,7 @@ namespace RentalFormApplication.dal
         }
 
         //Override
-        public bool addItem(AItem item)
+        public bool addItem(IItem item)
         {
             if (!isExist(item.getItemID()))
             {
@@ -31,7 +31,7 @@ namespace RentalFormApplication.dal
 
 
         //Override
-        public bool removeItem(AItem item)
+        public bool removeItem(IItem item)
         {
 
             if (isExist(item.getItemID()))
@@ -43,7 +43,7 @@ namespace RentalFormApplication.dal
             return false;
         }
 
-        public AItem find(String ItemID)
+        public IItem find(String ItemID)
         { 
             if (isExist(ItemID))
             {
@@ -54,12 +54,12 @@ namespace RentalFormApplication.dal
 
     
 
-        IEnumerable<AItem> IDAO<AItem, AItem>.getAll()
+        IEnumerable<IItem> IDAO<IItem, IItem>.getAll()
         {
             return DBTables.ITEM_TABLE;
         }
 
-        public bool add(AItem t)
+        public bool add(IItem t)
         {
             throw new NotImplementedException();
         }

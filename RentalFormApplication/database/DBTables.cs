@@ -10,7 +10,7 @@ namespace RentalFormApplication.database
 {
     public class DBTables
     {
-        public static List<AItem> ITEM_TABLE = new List<AItem>();
+        public static List<IItem> ITEM_TABLE = new List<IItem>();
 
 
         public static void pOpulate_ITEM_TABLE()

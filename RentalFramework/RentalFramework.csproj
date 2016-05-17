@@ -48,14 +48,15 @@
     <Compile Include="dal\IDAO.cs" />
     <Compile Include="dal\IItemDAO.cs" />
     <Compile Include="dal\ITransactionDAO.cs" />
+    <Compile Include="decorator\AItemDecorator.cs" />
     <Compile Include="dto\IDTO.cs" />
     <Compile Include="dto\ItemDTO.cs" />
     <Compile Include="dto\ITransactionDTO.cs" />
-    <Compile Include="entities\AItem.cs" />
+    <Compile Include="entities\IItem.cs" />
     <Compile Include="entities\ATransaction.cs" />
     <Compile Include="entities\ITransaction.cs" />
     <Compile Include="factories\IFactory.cs" />
-    <Compile Include="factories\IItemFactory.cs" />
+    <Compile Include="factories\IItemFactor.cs" />
     <Compile Include="factories\ITransactionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\AbstractItemService.cs" />

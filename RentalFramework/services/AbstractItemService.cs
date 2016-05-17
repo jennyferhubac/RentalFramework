@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using RentalFramework.factories;
 using RentalFramework.dal;
 using RentalFramework.entities;
+using RentalFramework.dto;
 
 namespace RentalFramework.service
 {
@@ -25,9 +26,9 @@ namespace RentalFramework.service
 		}
 	}
 
-        public abstract bool addItem(AItem item);
+        public abstract bool addItem(ItemDTO itemDTO);
 
-        public abstract bool removeItem(AItem item);
+        public abstract bool removeItem(ItemDTO itemDTO);
 
         public void setFactory(IItemFactory factory)
         {

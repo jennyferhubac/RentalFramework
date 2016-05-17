@@ -7,53 +7,22 @@ using System.Threading.Tasks;
 
 namespace RentalFormApplication.entities
 {
-    public class Car : AItem
+    public class Car : IItem
     {
         private String ItemID;
-        private String Make;
-        private String Model;
-        private String Category;
-        private Double Price;
 
-        public Car(String ItemID,String Make,String Model,String Category,Double Price)
-            : base(ItemID)
-        {
-            this.ItemID = ItemID;
-            this.Make = Make;
-            this.Model = Model;
-            this.Category = Category;
-            this.Price = Price;
-	    }
 
-        public String getItemId()
+        public string getItemID()
         {
             return this.ItemID;
         }
 
-        public String getMake()
+        public void setItemID(string ItemID)
         {
-            return Make;
+            this.ItemID = ItemID;
         }
 
-
-        public String getModel()
-        {
-            return Model;
-        }
-
-
-
-        public String getCategory()
-        {
-            return Category;
-        }
-
-  
-
-        public double getPrice()
-        {
-            return Price;
-        }
+        
 
     
     }

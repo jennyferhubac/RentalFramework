@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RentalFramework.entities;
+using RentalFramework.dto;
 
 namespace RentalFramework.service
 {
     interface ItemService
     {
-        bool addItem(AItem item);
+        bool addItem(ItemDTO itemDTO);
 
-        bool removeItem(AItem item);
+        bool removeItem(ItemDTO itemDTO);
     }
 }
