@@ -8,6 +8,10 @@ namespace RentalFramework.entities
 {
     public abstract class ATransaction : ITransaction
     {
-        
+        private String transactionID;
+        private DateTime transactionDate;
+
+
+
     }
 }
