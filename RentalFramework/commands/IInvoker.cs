@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.commands
 {
-    public interface IInvoker
+    interface IInvoker
     {
         void setCommand(ICommand command);
 

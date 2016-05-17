@@ -7,3 +7,5 @@ C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFo
 C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFormApplication\obj\Debug\RentalFormApplication.csproj.GenerateResource.Cache
 C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFormApplication\obj\Debug\RentalFormApplication.exe
 C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFormApplication\obj\Debug\RentalFormApplication.pdb
+C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFormApplication\bin\Debug\RentalFramework.dll
+C:\Users\Jennyfer\documents\visual studio 2013\Projects\RentalFramework\RentalFormApplication\bin\Debug\RentalFramework.pdb
