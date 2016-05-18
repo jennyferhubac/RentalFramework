@@ -13,7 +13,11 @@ namespace RentalFramework.dal
     {
         bool add(ATransaction t);
 
+        void delete(String id);
+
         ATransaction find(String transactionID);
+
+        ATransaction update(ATransaction t);
 
         IEnumerable<ATransaction> getAll();
     }

@@ -47,6 +47,7 @@ namespace RentalFramework.entities
             this.transactionID = transactionID;
         }
 
+        public abstract String getType();
         public abstract double getTotal();
         public abstract double getPenalty();
     }

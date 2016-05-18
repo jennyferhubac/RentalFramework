@@ -108,8 +108,9 @@ namespace RentalFormApplication.Service
                 //override
                 public override bool removeItem(ItemDTO itemDTO)
                 {
-                    IItem decoratedItem = decorateItem(itemDTO);
-                    return itemDAO.removeItem(decoratedItem);
+                    //IItem decoratedItem = decorateItem(itemDTO);
+                    IItem Item = findItem(itemDTO.getItemID());
+                    return itemDAO.removeItem(Item);
                 }
 
 

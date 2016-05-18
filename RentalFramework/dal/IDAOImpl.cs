@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RentalFramework.dal
 {
-    interface IDAOImpl<in T, out R> : IDAO<T, R>
+    public interface IDAOImpl<in T, out R> : IDAO<T, R>
     {
         bool add(T t);
 

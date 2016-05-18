@@ -18,6 +18,8 @@ namespace RentalFramework.dto
 
         private Double penaltyAmount;
 
+        private String type;
+
         private ARequest request;
 
         public ARequest Request
@@ -30,6 +32,12 @@ namespace RentalFramework.dto
         {
             get { return transactionID; }
             set { transactionID = value; }
+        }
+
+        public String Type
+        {
+            get { return type; }
+            set { type = value; }
         }
 
         public DateTime TransactionDate

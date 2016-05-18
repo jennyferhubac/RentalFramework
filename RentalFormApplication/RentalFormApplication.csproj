@@ -64,14 +64,19 @@
   <ItemGroup>
     <Compile Include="commands\CreateTransactionCommand.cs" />
     <Compile Include="dal\ItemDAOImp.cs" />
+    <Compile Include="dal\TransactionDAOImpl.cs" />
     <Compile Include="database\DBTables.cs" />
     <Compile Include="decorator\CarDecorator.cs" />
     <Compile Include="decorator\BookDecorator.cs" />
     <Compile Include="dto\BookDTO.cs" />
     <Compile Include="dto\CarDTO.cs" />
+    <Compile Include="dto\TransactionDTO.cs" />
     <Compile Include="entities\Book.cs" />
     <Compile Include="entities\Car.cs" />
+    <Compile Include="entities\CheckinTransaction.cs" />
+    <Compile Include="entities\CheckoutTransaction.cs" />
     <Compile Include="factories\ItemFactory.cs" />
+    <Compile Include="factories\TransactionFactory.cs" />
     <Compile Include="Item.cs">
       <SubType>Form</SubType>
     </Compile>

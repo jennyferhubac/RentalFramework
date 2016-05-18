@@ -12,6 +12,7 @@ namespace RentalFormApplication.database
     {
         public static List<IItem> ITEM_TABLE = new List<IItem>();
 
+        public static List<ATransaction> TRANSACTION_TABLE = new List<ATransaction>();
 
         public static void pOpulate_ITEM_TABLE()
         { 
