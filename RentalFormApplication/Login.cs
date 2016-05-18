@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentalFormApplication.Service;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RentalFramework.entities;
+using RentalFormApplication.entities;
 
 namespace RentalFormApplication
 {
@@ -28,7 +31,31 @@ namespace RentalFormApplication
             Form frm = (Form)this.MdiParent;
             StatusStrip statusStrip = (StatusStrip)frm.Controls["statusStrip"];
             statusStrip.Items["userName"].Text=$"Logged in as: {txtUserName.Text}";
-            this.Close();
+
+            UserService userService = new UserService();
+            List<Role> roles = new List<Role>();
+            roles.Add(new Role { RoleId = 1, Name = "Admin" });
+            roles.Add(new Role { RoleId = 2, Name = "User" });
+            AUser user = new User
+            {
+                UserId=1,
+                UserName = txtUserName.Text.Trim(),
+                Password = txtPassword.Text,
+                Roles = new Role { RoleId = 1, Name = "Admin" }
+            };
+
+            AUser loginInfo = userService.Login(user);
+
+            if (loginInfo != null)
+            {
+                MDIRental.UserId = loginInfo.UserId;
+                this.Close();
+            }
+        }
+
+        private AUser User()
+        {
+            throw new NotImplementedException();
         }
 
         private void Login_KeyDown(object sender, KeyEventArgs e)

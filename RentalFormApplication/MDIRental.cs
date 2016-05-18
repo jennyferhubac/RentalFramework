@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RentalFormApplication.entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace RentalFormApplication
     public partial class MDIRental : Form
     {
         public static string UserName { get; set; }
+        public static int UserId { get; set; }
 
         private int childFormNumber = 0;
 
