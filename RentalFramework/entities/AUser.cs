@@ -8,5 +8,6 @@ namespace RentalFramework.entities
 {
     public abstract class AUser
     {
+        public int UserId { get; set; }
     }
 }
