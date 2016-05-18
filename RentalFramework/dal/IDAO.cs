@@ -10,7 +10,11 @@ namespace RentalFramework.dal
     {
         bool add(T t);
 
+        void delete(String id);
+
         R find(String name);
+
+        R update(T t);
 
         IEnumerable<R> getAll();
     }
