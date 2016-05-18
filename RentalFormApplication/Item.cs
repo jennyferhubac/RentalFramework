@@ -25,12 +25,7 @@ namespace RentalFormApplication
 
         private void Item_Load(object sender, EventArgs e)
         {
-
-
-
             initializeViewColumns();
-            
-             
         }
 
         public void initializeViewColumns()
