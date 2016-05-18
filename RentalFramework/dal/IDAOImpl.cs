@@ -10,9 +10,9 @@ namespace RentalFramework.dal
     {
         bool add(T t);
 
-        void delete(String id);
+        void delete(T t);
 
-        R find(String name);
+        R find(String str);
 
         R update(T t);
 

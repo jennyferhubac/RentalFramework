@@ -8,23 +8,37 @@ namespace RentalFramework.entities
 {
     public abstract class ARequest : IRequest
     {
-        private String requestID;
-        protected List<IItem> arrItems;
+        private string requestID;
+        private AUser requester;
+        private List<IItem> arrItems;
+        public void setRequester(AUser requester)
+        {
+            this.requester = requester;
+        }
+        public AUser getRequester()
+        {
+            return requester;
+        }
 
-        public ARequest(String requestID)
+        public void setItems(List<IItem> arrItems)
+        {
+            this.arrItems = arrItems;
+        }
+
+        public List<IItem> getItems()
+        {
+            return this.arrItems;
+        }
+
+        public string getRequestID()
+        {
+            return requestID;
+        }
+
+        public void setRequestID(string requestID)
         {
             this.requestID = requestID;
-            arrItems = new List<IItem>();
         }
 
-        public String RequestID
-        {
-            get { return requestID; }
-            set { requestID = value; }
-        }
-
-        public abstract void addItem(IItem item);
-
-        
     }
 }

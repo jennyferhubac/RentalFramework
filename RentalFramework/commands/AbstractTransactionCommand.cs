@@ -10,9 +10,9 @@ namespace RentalFramework.commands
 {
     public abstract class AbstractTransactionCommand : ICommand
     {
-        protected ITransactionService transactionService;
+        protected AbstractTransactionService transactionService;
 
-        public AbstractTransactionCommand(ITransactionService transactionService) : base()
+        public AbstractTransactionCommand(AbstractTransactionService transactionService) : base()
         {
             this.transactionService = transactionService;
         }

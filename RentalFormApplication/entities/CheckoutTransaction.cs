@@ -10,9 +10,9 @@ namespace RentalFormApplication.entities
 {
     public class CheckoutTransaction : ATransaction
     {
-        public CheckoutTransaction(DateTime transactionDate, ARequest request) : base(transactionDate, request)
+        public CheckoutTransaction(string transactionID, DateTime transactionDate, ARequest request) : base(transactionDate, request)
         {
-
+            setTransactionID(transactionID);
         }
         public override double getTotal()
         {
@@ -28,6 +28,11 @@ namespace RentalFormApplication.entities
         public override string getType()
         {
             return "CHECKOUT";
+        }
+
+        public override string ToString()
+        {
+            return "[Transaction ID: " + transactionID + " Date: " + transactionDate + "]";
         }
     }
 }

@@ -8,5 +8,6 @@ namespace RentalFramework.entities
 {
     interface IRequest
     {
+
     }
 }

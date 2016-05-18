@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="builder\ARequestBuilder.cs" />
     <Compile Include="builder\IBuilder.cs" />
     <Compile Include="commands\AbstractItemCommand.cs" />
     <Compile Include="commands\AbstractTransactionCommand.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="dto\ATransactionDTO.cs" />
     <Compile Include="dto\IDTO.cs" />
     <Compile Include="dto\ItemDTO.cs" />
+    <Compile Include="entities\AUser.cs" />
     <Compile Include="entities\IItem.cs" />
     <Compile Include="entities\ARequest.cs" />
     <Compile Include="entities\ATransaction.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="factories\ITransactionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\AbstractItemService.cs" />
+    <Compile Include="services\AbstractTransactionService.cs" />
     <Compile Include="services\ItemService.cs" />
     <Compile Include="services\ITransactionService.cs" />
   </ItemGroup>

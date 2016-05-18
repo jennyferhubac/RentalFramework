@@ -59,13 +59,13 @@ namespace RentalFormApplication.dal
             return DBTables.ITEM_TABLE;
         }
 
+
         public bool add(IItem t)
         {
             throw new NotImplementedException();
         }
 
-
-        public void delete(string id)
+        public void delete(IItem t)
         {
             throw new NotImplementedException();
         }

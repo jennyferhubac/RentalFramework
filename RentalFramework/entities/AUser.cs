@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RentalFramework.entities;
 
-namespace RentalFramework.builder
+namespace RentalFramework.entities
 {
-
-    public interface IBuilder<T>
+    public abstract class AUser
     {
-        T create();
-
     }
 }

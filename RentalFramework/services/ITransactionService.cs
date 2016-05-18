@@ -15,6 +15,6 @@ namespace RentalFramework.services
 
         ATransaction findTransaction(String transactionID);
 
-        IEnumerable<ATransactionDTO> getAllTransactions();
+        IEnumerable<ATransaction> getAllTransactions();
     }
 }

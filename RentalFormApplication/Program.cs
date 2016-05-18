@@ -16,7 +16,7 @@ namespace RentalFormApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Item());
+            Application.Run(new RentalFormApp());
         }
     }
 }
