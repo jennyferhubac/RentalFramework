@@ -44,25 +44,28 @@ partial class Item
             // 
             // CarListView
             // 
-            this.CarListView.Location = new System.Drawing.Point(12, 12);
+            this.CarListView.Location = new System.Drawing.Point(16, 15);
+            this.CarListView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CarListView.Name = "CarListView";
-            this.CarListView.Size = new System.Drawing.Size(316, 187);
+            this.CarListView.Size = new System.Drawing.Size(420, 229);
             this.CarListView.TabIndex = 1;
             this.CarListView.UseCompatibleStateImageBehavior = false;
             // 
             // BookListView
             // 
-            this.BookListView.Location = new System.Drawing.Point(12, 205);
+            this.BookListView.Location = new System.Drawing.Point(16, 252);
+            this.BookListView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BookListView.Name = "BookListView";
-            this.BookListView.Size = new System.Drawing.Size(316, 187);
+            this.BookListView.Size = new System.Drawing.Size(420, 229);
             this.BookListView.TabIndex = 2;
             this.BookListView.UseCompatibleStateImageBehavior = false;
             // 
             // btnLoadCar
             // 
-            this.btnLoadCar.Location = new System.Drawing.Point(375, 140);
+            this.btnLoadCar.Location = new System.Drawing.Point(500, 172);
+            this.btnLoadCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLoadCar.Name = "btnLoadCar";
-            this.btnLoadCar.Size = new System.Drawing.Size(193, 24);
+            this.btnLoadCar.Size = new System.Drawing.Size(257, 30);
             this.btnLoadCar.TabIndex = 3;
             this.btnLoadCar.Text = "Show Changes";
             this.btnLoadCar.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@ partial class Item
             // 
             // btnAddCar
             // 
-            this.btnAddCar.Location = new System.Drawing.Point(375, 44);
+            this.btnAddCar.Location = new System.Drawing.Point(500, 54);
+            this.btnAddCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddCar.Name = "btnAddCar";
-            this.btnAddCar.Size = new System.Drawing.Size(193, 24);
+            this.btnAddCar.Size = new System.Drawing.Size(257, 30);
             this.btnAddCar.TabIndex = 4;
             this.btnAddCar.Text = "Add Car";
             this.btnAddCar.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@ partial class Item
             // 
             // btnRemoveCar
             // 
-            this.btnRemoveCar.Location = new System.Drawing.Point(476, 86);
+            this.btnRemoveCar.Location = new System.Drawing.Point(635, 106);
+            this.btnRemoveCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRemoveCar.Name = "btnRemoveCar";
-            this.btnRemoveCar.Size = new System.Drawing.Size(92, 24);
+            this.btnRemoveCar.Size = new System.Drawing.Size(123, 30);
             this.btnRemoveCar.TabIndex = 5;
             this.btnRemoveCar.Text = "Remove Car";
             this.btnRemoveCar.UseVisualStyleBackColor = true;
@@ -90,9 +95,10 @@ partial class Item
             // 
             // btnRemoveBook
             // 
-            this.btnRemoveBook.Location = new System.Drawing.Point(476, 262);
+            this.btnRemoveBook.Location = new System.Drawing.Point(635, 322);
+            this.btnRemoveBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRemoveBook.Name = "btnRemoveBook";
-            this.btnRemoveBook.Size = new System.Drawing.Size(92, 24);
+            this.btnRemoveBook.Size = new System.Drawing.Size(123, 30);
             this.btnRemoveBook.TabIndex = 8;
             this.btnRemoveBook.Text = "Remove Book";
             this.btnRemoveBook.UseVisualStyleBackColor = true;
@@ -100,9 +106,10 @@ partial class Item
             // 
             // btnAddBook
             // 
-            this.btnAddBook.Location = new System.Drawing.Point(375, 221);
+            this.btnAddBook.Location = new System.Drawing.Point(500, 272);
+            this.btnAddBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(193, 24);
+            this.btnAddBook.Size = new System.Drawing.Size(257, 30);
             this.btnAddBook.TabIndex = 7;
             this.btnAddBook.Text = "Add Book";
             this.btnAddBook.UseVisualStyleBackColor = true;
@@ -110,9 +117,10 @@ partial class Item
             // 
             // btnLoadBook
             // 
-            this.btnLoadBook.Location = new System.Drawing.Point(375, 295);
+            this.btnLoadBook.Location = new System.Drawing.Point(500, 363);
+            this.btnLoadBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLoadBook.Name = "btnLoadBook";
-            this.btnLoadBook.Size = new System.Drawing.Size(193, 24);
+            this.btnLoadBook.Size = new System.Drawing.Size(257, 30);
             this.btnLoadBook.TabIndex = 6;
             this.btnLoadBook.Text = "Show Changes";
             this.btnLoadBook.UseVisualStyleBackColor = true;
@@ -120,41 +128,45 @@ partial class Item
             // 
             // CarItemID
             // 
-            this.CarItemID.Location = new System.Drawing.Point(422, 90);
+            this.CarItemID.Location = new System.Drawing.Point(563, 111);
+            this.CarItemID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CarItemID.Name = "CarItemID";
-            this.CarItemID.Size = new System.Drawing.Size(48, 20);
+            this.CarItemID.Size = new System.Drawing.Size(63, 22);
             this.CarItemID.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(372, 93);
+            this.label1.Location = new System.Drawing.Point(496, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Item ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(372, 265);
+            this.label2.Location = new System.Drawing.Point(496, 326);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(55, 17);
             this.label2.TabIndex = 12;
             this.label2.Text = "Item ID:";
             // 
             // BookItemID
             // 
-            this.BookItemID.Location = new System.Drawing.Point(422, 262);
+            this.BookItemID.Location = new System.Drawing.Point(563, 322);
+            this.BookItemID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BookItemID.Name = "BookItemID";
-            this.BookItemID.Size = new System.Drawing.Size(48, 20);
+            this.BookItemID.Size = new System.Drawing.Size(63, 22);
             this.BookItemID.TabIndex = 11;
             // 
             // Item
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 402);
+            this.ClientSize = new System.Drawing.Size(773, 495);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BookItemID);
             this.Controls.Add(this.label1);
@@ -167,6 +179,10 @@ partial class Item
             this.Controls.Add(this.btnLoadCar);
             this.Controls.Add(this.BookListView);
             this.Controls.Add(this.CarListView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Item";
             this.Text = "Item";
             this.Load += new System.EventHandler(this.Item_Load);

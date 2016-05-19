@@ -14,6 +14,9 @@ namespace RentalFormApplication.database
 
         public static List<ATransaction> TRANSACTION_TABLE = new List<ATransaction>();
 
+        public static List<AUser> USER_TABLE = new List<AUser>();
+        public static List<ARole> ROLE_TABLE = new List<ARole>();
+
         public static void pOpulate_ITEM_TABLE()
         { 
            /* ITEM_TABLE.Add(new Car("123","Chevy","Cavalier","Economy",100));

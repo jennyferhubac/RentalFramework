@@ -36,9 +36,10 @@
             // 
             // btnCheckin
             // 
-            this.btnCheckin.Location = new System.Drawing.Point(333, 32);
+            this.btnCheckin.Location = new System.Drawing.Point(444, 39);
+            this.btnCheckin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCheckin.Name = "btnCheckin";
-            this.btnCheckin.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckin.Size = new System.Drawing.Size(100, 28);
             this.btnCheckin.TabIndex = 0;
             this.btnCheckin.Text = "Checkin";
             this.btnCheckin.UseVisualStyleBackColor = true;
@@ -46,37 +47,44 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 35);
+            this.textBox1.Location = new System.Drawing.Point(167, 43);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
+            this.textBox1.Size = new System.Drawing.Size(183, 22);
             this.textBox1.TabIndex = 1;
             // 
             // lblRequest
             // 
             this.lblRequest.AutoSize = true;
-            this.lblRequest.Location = new System.Drawing.Point(37, 42);
+            this.lblRequest.Location = new System.Drawing.Point(49, 52);
+            this.lblRequest.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRequest.Name = "lblRequest";
-            this.lblRequest.Size = new System.Drawing.Size(47, 13);
+            this.lblRequest.Size = new System.Drawing.Size(61, 17);
             this.lblRequest.TabIndex = 2;
             this.lblRequest.Text = "Request";
             // 
             // txtShowTrans
             // 
-            this.txtShowTrans.Location = new System.Drawing.Point(40, 86);
+            this.txtShowTrans.Location = new System.Drawing.Point(53, 106);
+            this.txtShowTrans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtShowTrans.Multiline = true;
             this.txtShowTrans.Name = "txtShowTrans";
-            this.txtShowTrans.Size = new System.Drawing.Size(368, 113);
+            this.txtShowTrans.Size = new System.Drawing.Size(489, 138);
             this.txtShowTrans.TabIndex = 3;
             // 
             // RentalFormApp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 261);
+            this.ClientSize = new System.Drawing.Size(617, 321);
             this.Controls.Add(this.txtShowTrans);
             this.Controls.Add(this.lblRequest);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnCheckin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "RentalFormApp";
             this.Text = "Rental Form";
             this.Load += new System.EventHandler(this.RentalFormApp_Load);

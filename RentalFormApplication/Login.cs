@@ -33,24 +33,21 @@ namespace RentalFormApplication
             statusStrip.Items["userName"].Text=$"Logged in as: {txtUserName.Text}";
 
             UserService userService = new UserService();
-            List<Role> roles = new List<Role>();
-            roles.Add(new Role { RoleId = 1, Name = "Admin" });
-            roles.Add(new Role { RoleId = 2, Name = "User" });
             AUser user = new User
             {
-                UserId=1,
                 UserName = txtUserName.Text.Trim(),
-                Password = txtPassword.Text,
-                Roles = new Role { RoleId = 1, Name = "Admin" }
+                Password = txtPassword.Text
             };
 
-            AUser loginInfo = userService.Login(user);
+            User loginInfo = userService.Login(user) as User;
 
             if (loginInfo != null)
             {
                 MDIRental.UserId = loginInfo.UserId;
+                MDIRental.UserName = loginInfo.UserName;
                 this.Close();
             }
+            lblErrorMsg.Visible = true;
         }
 
         private AUser User()
@@ -64,6 +61,16 @@ namespace RentalFormApplication
             {
                 SendKeys.Send("{Tab}");
             }
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorMsg.Visible = false;
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            lblErrorMsg.Visible = false;
         }
     }
 }

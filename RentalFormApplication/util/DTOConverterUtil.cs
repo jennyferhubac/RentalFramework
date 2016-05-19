@@ -13,19 +13,19 @@ namespace RentalFormApplication.util
     class DTOConverterUtil
     {
 
-      public static CarDTO getPojoFromAItemToCar(CarDecorator item)
+        public static CarDTO getPojoFromAItemToCar(CarDecorator item)
         {
-		CarDTO pp = new CarDTO();
-        pp.setItemID(item.getItemID());
-        pp.setItemType("Car");
-        pp.setCategory(item.getCategory());
-        pp.setMake(item.getMake());
-        pp.setModel(item.getModel());
-        pp.setPrice(item.getPrice());
-		return pp;
-	   }
+            CarDTO pp = new CarDTO();
+            pp.setItemID(item.getItemID());
+            pp.setItemType("Car");
+            pp.setCategory(item.getCategory());
+            pp.setMake(item.getMake());
+            pp.setModel(item.getModel());
+            pp.setPrice(item.getPrice());
+            return pp;
+        }
 
-        
+
         public static BookDTO getPojoFromAItemToBook(BookDecorator item)
         {
             BookDTO pp = new BookDTO();
@@ -37,7 +37,7 @@ namespace RentalFormApplication.util
             pp.setNumBorrowDays(item.getNumBorrowDays());
             return pp;
         }
-       
+
 
 
 

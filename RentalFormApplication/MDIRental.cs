@@ -1,4 +1,5 @@
-﻿using RentalFormApplication.entities;
+﻿using RentalFormApplication.database;
+using RentalFormApplication.entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,24 +68,32 @@ namespace RentalFormApplication
                     || form.GetType() == new Login().GetType())
                 {
                     form.Activate();
+                    form.Show();
                     return;
                 }
             }
 
             FormToBeOpened.MdiParent = this;
             FormToBeOpened.StartPosition = FormStartPosition.Manual;
-            FormToBeOpened.Location = new Point(Width / 2 - FormToBeOpened.Width / 2, Height / 2 - FormToBeOpened.Height / 2);
+            FormToBeOpened.Location = new Point(Width / 2 - FormToBeOpened.Width / 2
+                , Height / 2 - (FormToBeOpened.Height+150) / 2);
             FormToBeOpened.Show();
         }
 
         private void MDIRental_Load(object sender, EventArgs e)
         {
+            DBTables.USER_TABLE.Add(new User { UserName = "admin", Password = "123", Roles = new Role { Name = "admin", RoleId = 1 } });
             ShowForm(new Login());
         }
 
         private void checkoutItemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ShowForm(new RentalFormApp());
+        }
+
+        private void addUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowForm(AddUser.OnlyInstance);
         }
     }
 }
